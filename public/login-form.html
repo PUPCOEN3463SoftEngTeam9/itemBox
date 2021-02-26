@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        
+
+        <link rel="stylesheet" type="text/css" href="css/login-style.css">
+      
+        <title>Login Form</title>
+        <link rel="stylesheet" type="text/css" href="css/styLog.css">
+    
+    </head>
+    
+    <body>
+        
+      
+
+
+     <div class="center" id="center">
+        <div class="loginbox">
+            <div class="regbox "> 
+                <img src ="img/icon1.png" class ="icon">
+                <h1>Login Here</h1>
+            <form id="loginForm">
+              
+                    <label>Email</label>
+                    <input type="text" id="email" required>
+                 
+              
+                
+              
+                    <label>Password</label>
+                    <input type="password" id="password" required>
+               
+
+                <p>Code</p>
+                    <input type="code" name="" placeholder="Enter Code">
+                
+            
+                    
+ 
+                
+            
+ 
+
+                        <input type="submit" name="enter" value="Login">
+                        <a href="#" id="forgotbutton">Forgot Password?</a>       <br>
+          
+      
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+                <div class="containers" id="popups" style="display: none;">
+                    <div class="popups" style="display: none;">
+                        <h2>password reset</h2>
+                        <div class="boxs">
+                            <h4>reset your password</h4>
+                            <form id="resetPass">
+                                <input type="email" id="receivingEmail" placeholder="" required>
+                                <button type="submit">submit</button>
+                            </form>
+                        </div>
+                        <div class="finasl" style="display: none;">
+                            <button type="button" id="close">Close</button>
+                        </div>
+                   </div>
+                </div>
+
+               
+        
+      
+        
+        <!--------------------------FIRBASE LIBRARIES-------------------------------------------------->
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+        <script src="js/config.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Styles/index/indexstyles.css">
+  <title>Guest</title>
+</head>
+
+<body>
+  <header id="mainHeader">
+    <div class="container">
+      <h1><a href="index.html">WELCOME TO ITEM BOX!</a></h1>
+    </div>
+  </header>
+  
+    <input type="text" id="itemName"  placeholder="Search for Item...">
+    <input type="submit" value="search" onclick="itemSearch()">
+    <input type="text" id="brandName"  placeholder="Search for a brand...">
+    <input type="submit" value="search" onclick="brandSearch()">
+    <button onclick="window.location.href='./additem.html'">Add Item</button>
+    
+
+  <div class="container">
+    <table id="content-table" >
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Brand</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>item 1</td>
+          <td>999</td>
+          <td>X</td>
+          <td>P9999</td>
+        </tr>
+        <tr>
+          <td>item 2</td>
+          <td>999</td>
+          <td>y</td>
+          <td>P8888</td>
+        </tr>
+        <tr>
+          <td>item 3</td>
+          <td>0</td>
+          <td>z</td>
+          <td>8989</td>
+        </tr>
+        <tr>
+          <td>item 4</td>
+          <td>5562</td>
+          <td>xy</td>
+          <td>7885</td>
+        </tr>
+        <tr>
+          <td>item 5</td>
+          <td>6630</td>
+          <td>yz</td>
+          <td>1660</td>
+        </tr>
+        <tr>
+          <td>item 6</td>
+          <td>3368</td>
+          <td>xz</td>
+          <td>8555</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="./Styles/index/index.js"></script>
+</body>
+
+</html>

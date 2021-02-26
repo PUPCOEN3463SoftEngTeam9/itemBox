@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Styles/index/additemstyles.css">
+  <link rel="stylesheet" href="./Styles/index/font.css">
+  <link rel="stylesheet" href="./Styles/index/font1.css">
+  <link rel="stylesheet" href="./Styles/index/header.css">
+  <link rel="stylesheet" href="./Styles/index/Bootstrap.css">
+  <title>ITEM BOX</title>
+</head>
+
+<body>
+  <div>
+      <div class="header-dark" style="background-color:rgba(68,68,68,0);">
+          <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style="background-image:url(./Styles/img/bgl1.jpg.jpg);">
+              <div class="container"><a class="navbar-brand" href="#"><img src="./Styles/img/Logo.png"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                  <div
+                      class="collapse navbar-collapse" id="navcol-1">
+                      <ul class="nav navbar-nav">
+                          <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Menu</a>
+                              <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Management</a><a class="dropdown-item" role="presentation" href="addshop.html">Add Store</a><a class="dropdown-item" role="presentation" href="additem.html">Add Items</a></div>
+                          </li>
+                          <li class="nav-item" role="presentation"><a class="nav-link" href="#">Log Out</a></li>
+                      </ul>
+                      <form class="form-inline mr-auto" target="_self">
+                          <div class="form-group"><label for="search-field"><i class="fa fa-search"></i>Search</label><input class="form-control search-field" type="search" name="search" id="search-field"></div>
+                      </form>
+              </div>
+      </div>
+      </nav>
+  </div>
+  </div>
+
+  <form id="storeForm">
+      <div class="container store">
+        <div class="storeInput">
+          <label for="storeName">Store Name: </label>
+          <input name="storeName" id="storeName" type="text" placeholder="Store Name" required>
+        </div>
+        <div class="storeInput">
+          <label for="storeCode">Store Code: </label>
+          <input name="storeCode" id="storeCode" type="text" placeholder="Store Code" required>
+        </div>
+        <div class="storeInput">
+          <label for="password">Password: </label>
+          <input name="password" id="password" type="password" placeholder="Password" required>
+        </div>
+        <div class="storeInput">
+          <button id="entry" type="reset">Reset</button>     
+          <button id="entry" type="submit">Submit</button>
+        </div>
+      </div>
+  </form>
+
+<script src="./Styles/scripts/jquery.js"></script>
+<script src="./Styles/scripts/bs.js"></script>
+<script id="bs-live-reload" data-sseport="51472" data-lastchange="1612012977334" src="./Styles/scripts/livereload.js"></script>
+<script defer src="/__/firebase/8.2.9/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.9/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</body>
+</html>

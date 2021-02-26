@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Styles/index/indexstyles.css">
+  <title>Store</title>
+  <link rel="stylesheet" href="./Styles/index/additemstyles.css">
+  <link rel="stylesheet" href="./Styles/index/font.css">
+  <link rel="stylesheet" href="./Styles/index/font1.css">
+  <link rel="stylesheet" href="./Styles/index/header.css">
+  <link rel="stylesheet" href="./Styles/index/Bootstrap.css">
+</head>
+
+<body>
+  <header id="mainHeader">
+    <div class="container">
+      <h1><a href="index.html">WELCOME TO ITEM BOX!</a></h1>
+    </div>
+  </header>
+  
+    <input type="text" id="itemName"  placeholder="Search for Item...">
+    <input type="submit" value="search" onclick="itemSearch()">
+    <input type="text" id="brandName"  placeholder="Search for a brand...">
+    <input type="submit" value="search" onclick="brandSearch()">
+    <button href="#">Add Item</button>
+    
+
+    <form action="insidestore.html">
+      <div class="container">
+        <table id="display">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Brand</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </form>
+  <script src="./Styles/index/index.js"></script>
+  <script defer src="/__/firebase/8.2.9/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.9/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.9/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</body>
+
+</html>
